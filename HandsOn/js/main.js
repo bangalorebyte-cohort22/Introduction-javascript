@@ -84,17 +84,17 @@ const todos =[
     {
         id:2,
         text:'submit assignments',
-        isComplete:'True'
+        isComplete:true
     },
     {
         id: 3,
         text: 'eat breakfast',
-        isComplete: 'True'
+        isComplete:true
     },
     {
         id: 4,
         text: 'complete HandsOn',
-        isComplete: 'False'
+        isComplete:false
     }
 ]
 // console.log(todos[0])
@@ -128,8 +128,81 @@ const todos =[
 // };
 
 //For .. of
-for(let todo of todos){
-    console.log(todo.text)
-}
+// for(let todo of todos){
+//     console.log(todo.text)
+// }
+
+// Higher Order Array Methods.
+// forEach
+// todos.forEach(function(todo){
+//     console.log(todo)
+// });
+
+//map()
+// const todoText = todos.map(function(todo){
+//     return todo.text
+// });
+// console.log(todoText)
+
+//filter()
+// const todoFilter = todos.filter(function (todo) {
+//     return todo.isComplete == false;
+// })
+// console.log(todoFilter)
+
+
+//filter with map
+// const todoFilterMap = todos.filter(function(todo){
+//     return todo.isComplete==false;
+// }).map(function(todo){
+//     return todo.text;
+// });
+// console.log(todoFilterMap)
+
+//Conditionals
+const x = 32;
+// let y ='30';
+// console.log(x == y)
+// console.log(typeof y, typeof x)
+
+// console.log(x === y)
+// console.log(typeof y, typeof x)
+
+// if(x === 30){
+//     console.log(`x is ${x}`);
+// }else if(x<30){
+//     console.log(`x is less than ${x}`)
+// }else{onst 
+//     console.log(`x is greater than ${x}`)
+// }
+
+// switch
+const color = 'blue';
+// switch(color) {
+//     case 'red':
+//         console.log(`color is ${color} : Red`);
+//         break
+//     case 'blue':
+//         console.log(`color is ${color} : Blue`);
+//         break
+// }
+
+//Ternary operators
+// const z = color === 'red' ? 'red':'not red'
+// console.log(z)
+
+//Functions in javascript
+// function greet(){
+//     return 'Hello World'
+// }
+// console.log(greet());
+
+// ArrowFunctions
+// const greet = (name='john', age=25) => `hello ${name} and you are ${age}`;
+// console.log(greet());
+
+
+
+
 
 
