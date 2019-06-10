@@ -34,9 +34,9 @@
 // const x = null;
 // const y = undefined;
 // let z;
-// const a;
 
-// console.log(typeof z)
+
+// console.log(name)
 // console.log(`My name is ${name} and age is ${age}`)
 
 // String Methods
@@ -56,36 +56,80 @@
 // numbers.pop()
 // console.log(numbers);
 
-// const fruits = ['mango','apple','oranges']
-// fruits.push('grapes')
+// const fruits = ['mango','apple','oranges'];
+// fruits.push('grapes');
 // console.log(fruits);
-// const newFruits = ['tomato','strawberry']
-// const something = fruits.concat(newFruits)
+// const newFruits = ['tomato','strawberry'];
+// const something = fruits.concat(newFruits);
 // console.log(Array.isArray(something));
+// console.log(something.indexOf('oranges'))
+// console.log(something)
 
+// Objects
+// const person ={
+//     name : 'jithin',
+//     age:28,
+//     hobbies:['programming','driving'],
+//     languages:['python','javascript']
+// };
+// console.log(Object.keys(person));
+// console.log(person.languages[0]);
 
+const todos =[
+    {
+        id:1,
+        text:'learn javascript',
+        isComplete:'False'
+    },
+    {
+        id:2,
+        text:'submit assignments',
+        isComplete:'True'
+    },
+    {
+        id: 3,
+        text: 'eat breakfast',
+        isComplete: 'True'
+    },
+    {
+        id: 4,
+        text: 'complete HandsOn',
+        isComplete: 'False'
+    }
+]
+// console.log(todos[0])
+// console.log(todos[0].text)
+// const newTodo = {
+//     id:1,
+//     text:'HandsOn javascript',
+//     isComplete:'False'
+// }
 
+// todos.push(newTodo);
+// todos[0].email='john@something.com'
+// todos[0].id = '5'
+// console.log(todos)
 
+//LOOPS
 
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// };
 
+// for(let i=0;i<todos.length;i++){
+//     console.log(todos[i].text);
+// };
 
+//While
+// let i=0;
+// while(i<todos.length){
+//     console.log(todos[i].text);
+//     i++;
+// };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//For .. of
+for(let todo of todos){
+    console.log(todo.text)
+}
 
 
