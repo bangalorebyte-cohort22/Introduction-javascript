@@ -1,7 +1,7 @@
-// console.log
 // console.log("Hello World");
 // console.warn("Jithin ");
 // console.error('This is an error');
+
 
 // Variable - Three ways of initializing a variable
 // let
@@ -75,29 +75,29 @@
 // console.log(Object.keys(person));
 // console.log(person.languages[0]);
 
-const todos =[
-    {
-        id:1,
-        text:'learn javascript',
-        isComplete:'False'
-    },
-    {
-        id:2,
-        text:'submit assignments',
-        isComplete:true
-    },
-    {
-        id: 3,
-        text: 'eat breakfast',
-        isComplete:true
-    },
-    {
-        id: 4,
-        text: 'complete HandsOn',
-        isComplete:false
-    }
-]
-// console.log(todos[0])
+// const todos =[
+//     {
+//         id:1,
+//         text:'learn javascript',
+//         isComplete:'False'
+//     },
+//     {
+//         id:2,
+//         text:'submit assignments',
+//         isComplete:true
+//     },
+//     {
+//         id: 3,
+//         text: 'eat breakfast',
+//         isComplete:true
+//     },
+//     {
+//         id: 4,
+//         text: 'complete HandsOn',
+//         isComplete:false
+//     }
+// ]
+// // console.log(todos[0])
 // console.log(todos[0].text)
 // const newTodo = {
 //     id:1,
@@ -160,7 +160,7 @@ const todos =[
 // console.log(todoFilterMap)
 
 //Conditionals
-const x = 32;
+// const x = 32;
 // let y ='30';
 // console.log(x == y)
 // console.log(typeof y, typeof x)
@@ -177,7 +177,7 @@ const x = 32;
 // }
 
 // switch
-const color = 'blue';
+// const color = 'blue';
 // switch(color) {
 //     case 'red':
 //         console.log(`color is ${color} : Red`);
@@ -201,8 +201,32 @@ const color = 'blue';
 // const greet = (name='john', age=25) => `hello ${name} and you are ${age}`;
 // console.log(greet());
 
+// Javascript OOPS
 
+// function Person(firstName, lastName, dob){
+//     this.firstName= firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
 
+//     this.getBirthyear = function(){
+//         return this.dob.getUTCFullYear();
+//     }
+//     this.getFullName = function(){
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// };
+// const person = new Person('jithin','kumar','12-10-1990');
+// console.log(person.getBirthyear())
+// console.log(person.getFullName())
 
+// const person1 = new Person('John','Doe','7-6-80')
+// const person2 = new Person('Mary', 'Doe', '7-6-85')
+// console.log(person1.getBirthyear())
+// console.log(person2.getFullName())
 
+let title = document.getElementById('mainHeader').textContent;
+title = 'New Title'
+console.log(title)
 
+const header  = document.getElementById('mainHeader');
+header.innerHTML=`<h1>${title}</h1>`
